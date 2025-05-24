@@ -9,13 +9,9 @@ from dotenv import load_dotenv
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 AGENT_DIR = BASE_DIR  # Parent directory containing multi_tool_agent
 
-# Set up DB path for sessions
-SESSION_DB_URL = f"sqlite:///{os.path.join(BASE_DIR, 'sessions.db')}"
-
 # Create the FastAPI app using ADK's helper
 app: FastAPI = get_fast_api_app(
     agent_dir=AGENT_DIR,
-    session_db_url=SESSION_DB_URL,
     allow_origins=["*"],  # In production, restrict this
     web=True,  # Enable the ADK Web UI
 )
