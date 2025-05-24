@@ -69,3 +69,11 @@ The system is built using Google's **Gemini API** and the **ADK (Agent Developme
 
    ```bash
    python api.py
+
+## 🌐 Deployment
+
+Frontend is deployed via Vercel.
+
+Backend is deployed using Railway.
+
+Live Project link: https://tutoring-bot-fe.vercel.app/
